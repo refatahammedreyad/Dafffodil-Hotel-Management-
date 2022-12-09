@@ -1,0 +1,824 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: cursive;
+}
+
+                                                                    /*nav menu*/
+.head {
+  background-color: #24416b;
+  display: f;
+}
+.nav-bar {
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  margin-top: -3px;
+  float: left;
+  width: 150px;
+  padding-left: 2%;
+  padding-inline: 22px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 20px 20px;
+  float: right;
+}
+
+.nav-bar ul li {
+  float: left;
+  margin: 5px;
+  position: relative;
+  width: 120px;
+  padding: 15px;
+  background-color: #24416b;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: white;
+}
+
+.nav-bar ul li a:hover {
+  background-color: #ffacc7;
+  color: black;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.dropdown_menu {
+  display: none;
+}
+
+.nav-bar ul li:hover .dropdown_menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.dropdown_menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+.dropdown_menu ul li a {
+  color: aliceblue;
+}
+
+                                                                   /***-----------Home-------------***/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.home {
+  background-image: url("image/daffodil\ hotel.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 120px;
+  color: rgb(255, 153, 0);
+  padding-top: 25px;
+  text-align: center;
+}
+.home span {
+  color: black;
+  margin-top: 10px;
+}
+
+.home .content {
+  color: black;
+  margin-top: 131px;
+  padding: 8px;
+  text-align: center;
+  background-color: #cc8c18;
+  border-radius: 10px;
+}
+.content {
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  margin: 50px;
+  text-align: center;
+  gap: 60px;
+}
+
+
+
+
+.date {
+  width: 100%;
+  padding: 30px 50px 50px 10px;
+ 
+  background-image: url("image/daffodil\ hotel.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.elem-group {
+  margin: 20px 0;
+}
+.elem-group.inlined {
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  
+}
+label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 23px;
+  font-weight: 700;
+  background: rgba(97, 94, 94, 0.605);
+  margin: 0px 180px 4px 180px;
+  border-radius: 40%;
+}
+input,
+select,
+textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  width: 100%;
+  padding: 10px;
+}
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+button {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 21px;
+  width: 130px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid black;
+}
+
+
+
+
+
+
+
+                                                                       /* welcome*/
+
+.content2 {
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 25px;
+  grid-column-gap: 10px;
+  border: solid darkcyan 10px;
+  margin: 20px;
+}
+.box_2 {
+  background-color: #627795;
+  color: #532323;
+  padding: 40px;
+  border: solid 3px black;
+  border-radius: 10px;
+  flex: 25%;
+}
+.box_2:hover {
+  background-color: rgb(210, 210, 228);
+  transition: 1.5s;
+}
+
+/**** Offer****/
+.heading2 h5 {
+  font-weight: 10px;
+  letter-spacing: 3px;
+  color: #cc8c18;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.heading2 h3 {
+  color: #24416b;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+                                                                 /*------------offer------------*/
+section.offer .mtop {
+  height: 100%;
+}
+.grid2 {
+  display: grid;
+  height: 400px;
+  align-content: start;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.offer img {
+  width: 725px;
+  height: 450px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.offer .right {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 10 1px 5px 10px 5px rgb(145, 140, 140);
+  border-radius: 20px;
+  border: 2px solid rgb(237, 57, 57);
+}
+.offer.right :hover {
+  background-color: #532323;
+  transform: translateY(-10px);
+  color: white;
+}
+.offer .content h4 {
+  font-size: 20px;
+  color: #627795;
+  font-family: serif;
+}
+
+.offer .rate i {
+  font-size: 13px;
+  color: #cc8c18;
+  margin: 10px 10px 20px 0;
+}
+
+.offer .content h5 {
+  color: rgb(2, 2, 237);
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.offer .box {
+  margin-top: 10px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.offer .box:hover {
+  transform: translateY(-10px);
+  color: rgb(255, 255, 255);
+  background-color: rgb(72, 135, 146);
+  transition: 2s;
+}
+
+                                                               /*------------------testimonials---------------------- */
+.testimonials {
+  background-color: #24426b38;
+  padding: 40px 0;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
+}
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.t-border {
+  width: 160px;
+  height: 4px;
+  background: black;
+  margin: 26px auto;
+  animation: animate 4s linear infinite;
+}
+
+.t-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial {
+  background: #cc8c18;
+  padding: 30px;
+}
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+}
+
+                                                        /*---------------------gallery-----------------------*/
+
+.g-container {
+  width: 100%;
+  text-align: center;
+}
+
+.image {
+  height: 80%;
+  width: 90%;
+  margin: 10px auto 10px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px lightcoral;
+}
+.gallery-head h1 {
+  font-weight: 5px;
+  font-size: 35px;
+  position: relative;
+  margin: 30px;
+  text-align: center;
+}
+.gallery-head h1::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: darkred;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 200px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+.g-contant h1 {
+  text-align: center;
+  color: black;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.photo-gallery {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+                                                           /*-----------------Food-------------------*/
+.food-head h1 {
+  text-align: center;
+  margin: 10px 50px 10px 50px;
+  font-size: 50px;
+  background: #cc8c18;
+  border-radius: 50%;
+}
+.home-food1 {
+  padding: 10px 5%;
+  display: flex;
+}
+.home-text {
+  margin-left: 20px;
+}
+.food-1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8cm;
+  align-items: center;
+  box-sizing: border-box;
+  border: solid black 3px;
+  border-radius: 20px;
+}
+.food-img img {
+  height: 300px;
+  display: flex;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.food-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  background-color: #68889E;
+  color:#FFF;
+  border-color: #2F3E48;
+  
+}
+.food-btn:hover{
+  background-color: #2F3E48;
+  color:#FFF;
+  border-color: #31347B;
+}
+/*food2*/
+.home-food2 {
+  padding: 5px 5%;
+  display: flex;
+}
+.food-2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8cm;
+  align-items: center;
+  box-sizing: border-box;
+  border: solid black 3px;
+  border-radius: 20px;
+}
+/*food3*/
+.home-food3 {
+  padding: 5px 5%;
+  display: flex;
+}
+.food-3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8cm;
+  align-items: center;
+  box-sizing: border-box;
+  border: solid black 3px;
+  border-radius: 20px;
+}
+.food-menu h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+.box-img img {
+  height: 200px;
+  margin: 10px;
+}
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1cm;
+  padding: 50px;
+}
+.food-box {
+  text-align: center;
+  border: solid black 2px;
+  background-color: #feffff;
+}
+
+.food-box span {
+  color: red;
+  font-weight: 700;
+}
+                                                  /*-----------------room-------------------*/
+.room-head{
+  margin: 20px;
+  padding: 20px;
+}
+.room-head h1{
+  text-align: center;
+  margin: -24px 50px -24px 50px;
+  font-size: 50px;
+  background: #cc8c18;
+  border-radius: 50%;
+}
+.room-img img{
+  width: 650px;
+  height:500px; 
+  box-shadow: 3px 3px 5px lightcoral;
+  
+}
+
+.room-1{
+  border: solid black 2px;
+ padding: 20px;
+ margin: 0px 20px 20px 20px;
+ text-align: center;
+ box-sizing: border-box;
+ 
+}
+.home-text h1{
+ padding: 20px;
+  border-bottom: solid blueviolet 5px ;
+  margin-bottom: 10px;
+  box-sizing: border-box;  
+}
+.home-room {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.room-img:hover{
+  transform: translateY(20px);
+  color: white;
+}
+.design{
+  padding: 20px 0px 20px 0px;
+  margin:20px 0px 10px 0px ;
+}
+.design:hover{
+  background-color: #31347B;
+  color: wheat;
+  box-shadow: #cc8c18;
+  border-radius: 20px;
+}
+.room-btn{
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  background-color: #68889E;
+  color:#FFF;
+  border-color: #2F3E48;
+  
+
+}
+.room-btn:hover{
+  background-color: #31347B;
+  color: rgb(250, 39, 6);
+  border: solid black 5px; 
+}
+
+.room-5{
+  border: solid black 2px;
+  padding: 20px;
+  margin: 0px 400px 100px 400px;
+  text-align: center;
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+}
+
+.home5-text{
+  text-align: center;
+  margin-left: 30px;
+}
+.home5-text h1{
+  padding: 20px;
+  border-bottom: solid blueviolet 5px ;
+  margin-bottom: 10px;
+}
+ 
+                                   /*----------------------others------------------------*/
+.othres-head{
+  margin: 20px;
+  padding: 20px;
+}
+.others-head h1{
+  text-align: center;
+  margin: 20px 50px 20px 50px;
+  font-size: 50px;
+  background: #cc8c18;
+  border-radius: 50%;
+}
+.others-img img{
+
+  height: 80%;
+  width: 90%;
+  margin: 10px auto 10px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px lightcoral;
+
+}
+.others-1{
+
+ padding: 20px;
+ margin: 0px 20px 20px 20px;
+ text-align: center;
+ box-sizing: border-box;
+ 
+}
+
+.home-text h1{
+  padding: 20px;
+   border-bottom: solid blueviolet 5px ;
+   margin-bottom: 10px;
+   box-sizing: border-box;  
+ }
+ .others-home{
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  text-align: center;
+  padding-bottom: 50px;
+  
+ }
+ .others-img:hover{
+   transform: translateY(20px);
+   color: white;
+ }
+ .design{
+   padding: 20px 0px 20px 0px;
+   margin:20px 0px 10px 0px ;
+ }
+ .design:hover{
+   background-color: #31347B;
+   color: wheat;
+   box-shadow: #cc8c18;
+   border-radius: 20px;
+ }
+
+                                    /*----------------------Contact------------------------*/
+.contact-head h1{
+  text-align: center;
+  margin: 20px 50px 20px 50px;
+  font-size: 50px;
+  background: #cc8c18;
+  border-radius: 50%;
+}
+.container-contact{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color: wheat;
+  margin: 10px 0px 20px ;
+}
+
+.contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.c-box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  
+}
+.icon{
+  min-width: 40px;
+  height: 33px;
+  background: rgb(255, 255, 255);
+ text-align: center;
+  border-radius: 50%;
+  font-size: 22px;
+  
+}
+
+.text h3 {
+  padding-left: 15px;
+}
+.text p {
+  padding-left: 15px;
+}
+
+.contactFrom{
+  width: 40%;
+  padding: 40px;
+  background:wheat ;
+  border-radius: 15px;
+  margin: 20px;
+}
+.contactFrom h2{
+  font-size: 30px;
+  color:red ;
+  text-align: center;
+}
+.contactFrom.inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+ color: #532323;
+
+}
+.inputBox input{
+  width: 100%;
+  padding: 20px 2px;
+  font-size: 30px;
+  margin: 10ox 0;
+  border-bottom: 2px solid black;
+  outline: outset;
+}
+.c-box-name{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.inputBox-btn{
+box-sizing: border-box;
+padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+ font-weight: 800;
+ font-size: 20px;
+}
+.c-map iframe{
+  width:100%;
+ 
+}
+                                  /*----------------------about------------------------*/
+.a-head h1{
+  text-align: center;
+  font-weight:900px;
+  font-size: 60px;
+  color:#2F3E48;
+  padding-top: 30px;
+}
+.a-head h2{
+  text-align: center;
+  font-weight:900px;
+  font-size: 30px;
+  color: goldenrod;
+  padding-top: 30px;
+  font-family:inherit;
+}
+
+.a-head h2 span {
+color: coral;
+
+}
+.a-image img{
+  margin-right: 100px;
+    width: 80%;
+    height: 90%;
+    padding: 30px 0px 30px 0px;
+    margin-left: 50px;
+    border: solid beige;
+}
+.a-head h3{
+text-align: center;
+font-family: unset;
+color: #777;
+padding-top: 60px;
+  margin-right: 160px;
+  font-weight: 500;
+}
+
+
+.bio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5px;
+  box-sizing: border-box;
+  padding: 20px 50px 10px 50px;
+  
+}
+
+h4{
+  text-align: center;
+  font-family: cursive;
+  color: rgb(204, 19, 19);
+  margin-bottom: 20px;
+  padding-top: 35px;
+  margin: 0px 30px 10px 30px;
+}
+
+
+
+
+
+
+
+
+/* footer section start */
+
+.footer___grids {
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: rgb(18, 91, 104);
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}

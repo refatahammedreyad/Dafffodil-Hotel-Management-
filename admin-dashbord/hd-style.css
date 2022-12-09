@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+   
+}
+body{
+    background: rgb(231, 231, 231);
+    margin-left: 255px;
+    font-family: cursive;
+
+  
+}
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 200%;
+    width: 250px;
+    left: 0;
+    background:skyblue;
+    padding-top: 20px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    display: flex;
+}
+
+.logo{
+    text-align: center;
+    /* display: flex; */
+    transition: all 0.5s ease;
+    padding: 4px 79px 20px 20px;; 
+   
+}
+.logo img{
+   
+    width: 105px;
+    height: 100px;
+    border-radius: 50%;
+    padding-bottom: -2px;
+    margin-bottom: 10px;
+ 
+}
+.logo span{
+    font-weight: bold;
+    padding: 15px 0px 20px 0px;
+    font-size:25px;
+}
+a{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    display: table;
+    width: 300px;
+    padding-inline: 20px;
+    padding: 25px;
+    
+}
+.fas{
+    position: relative;
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.nav-item{
+    position: relative; 
+   
+   
+}
+
+.nav-head{
+    background: rgb(67, 105, 243);
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+   
+   
+}
+.nav-head h1{
+   text-align: center;
+   padding:30px;
+}
+.nav-head h2{
+    display: flex;
+}
+.profil-img{
+    display: flex;
+padding-top: 30px;
+padding-left: 60%;
+}
+.profil-img img {
+    width:10%;
+    height: 60%;
+    border-radius: 50%;
+    border: rgb(181, 16, 16) solid 2px;
+    margin-left: 30%;
+}
+
+
+ /*------------------table----------------------*/
+table{
+  
+    margin-top: 30px;
+    width: 100%;
+  text-align: center;
+   border-collapse:initial;
+}
+th{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+td a{
+   margin-left: 30%;
+}
